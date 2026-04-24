@@ -31,7 +31,7 @@ using the dataset placed in the project folder:
 ## Run
 
 ```powershell
-cd "C:\Users\11523\Documents\New project\machine_learning"
+cd "\machine_learning"
 python compare_flow_to_pulse_models.py
 ```
 
