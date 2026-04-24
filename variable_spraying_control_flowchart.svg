@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#222"/>
+    </marker>
+    <style>
+      .box { fill: #eef3fb; stroke: #222; stroke-width: 2; rx: 14; ry: 14; }
+      .text { font-family: "Times New Roman", serif; font-size: 28px; font-weight: 700; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .small { font-size: 24px; }
+      .arrow { stroke: #222; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="box" x="500" y="40" width="360" height="90"/>
+  <text class="text" x="680" y="75">
+    <tspan x="680" dy="0">Raspberry Pi</tspan>
+    <tspan x="680" dy="34">Send Prescription Value</tspan>
+  </text>
+
+  <rect class="box" x="500" y="180" width="360" height="90"/>
+  <text class="text" x="680" y="215">
+    <tspan x="680" dy="0">PrescriptionSerial</tspan>
+    <tspan x="680" dy="34">Receive Target Flow</tspan>
+  </text>
+
+  <rect class="box" x="120" y="340" width="360" height="110"/>
+  <text class="text" x="300" y="385">
+    <tspan x="300" dy="0">Feedforward Model</tspan>
+    <tspan class="small" x="300" dy="34">Convert target flow to</tspan>
+    <tspan class="small" x="300" dy="30">base ESC pulse width</tspan>
+  </text>
+
+  <rect class="box" x="520" y="340" width="320" height="110"/>
+  <text class="text" x="680" y="385">
+    <tspan x="680" dy="0">PID Controller</tspan>
+    <tspan class="small" x="680" dy="34">Compare target flow and</tspan>
+    <tspan class="small" x="680" dy="30">actual flow rate</tspan>
+  </text>
+
+  <rect class="box" x="920" y="340" width="320" height="110"/>
+  <text class="text" x="1080" y="385">
+    <tspan x="1080" dy="0">Pulse Combination</tspan>
+    <tspan class="small" x="1080" dy="34">Base pulse width +</tspan>
+    <tspan class="small" x="1080" dy="30">PID correction</tspan>
+  </text>
+
+  <rect class="box" x="920" y="520" width="320" height="90"/>
+  <text class="text" x="1080" y="565">
+    <tspan x="1080" dy="0">EscController</tspan>
+    <tspan x="1080" dy="34">Output ESC Pulse</tspan>
+  </text>
+
+  <rect class="box" x="920" y="680" width="320" height="90"/>
+  <text class="text" x="1080" y="725">
+    <tspan x="1080" dy="0">ESC + Pump</tspan>
+    <tspan x="1080" dy="34">Execute Spraying</tspan>
+  </text>
+
+  <rect class="box" x="500" y="680" width="300" height="90"/>
+  <text class="text" x="650" y="725">
+    <tspan x="650" dy="0">FlowSensor</tspan>
+    <tspan class="small" x="650" dy="34">Update actual flow every 500 ms</tspan>
+  </text>
+
+  <rect class="box" x="120" y="680" width="280" height="90"/>
+  <text class="text" x="260" y="715">
+    <tspan x="260" dy="0">USB Serial</tspan>
+    <tspan class="small" x="260" dy="34">Print flow, pulse, total,</tspan>
+    <tspan class="small" x="260" dy="30">and prescription</tspan>
+  </text>
+
+  <path class="arrow" d="M680 130 L680 180"/>
+  <path class="arrow" d="M680 270 L300 340"/>
+  <path class="arrow" d="M680 270 L680 340"/>
+  <path class="arrow" d="M480 395 L920 395"/>
+  <path class="arrow" d="M840 395 L920 395"/>
+  <path class="arrow" d="M1080 450 L1080 520"/>
+  <path class="arrow" d="M1080 610 L1080 680"/>
+  <path class="arrow" d="M920 725 L800 725"/>
+  <path class="arrow" d="M650 680 L650 450"/>
+  <path class="arrow" d="M500 725 L400 725"/>
+  <path class="arrow" d="M260 680 L260 450"/>
+  <path class="arrow" d="M650 680 L650 450"/>
+  <path class="arrow" d="M650 680 C650 610, 650 560, 680 450"/>
+  <path class="arrow" d="M800 725 C860 725, 880 725, 920 725"/>
+</svg>
